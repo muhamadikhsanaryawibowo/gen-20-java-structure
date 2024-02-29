@@ -1,13 +1,17 @@
-    public class aritmatika {
+import java.util.Scanner;
+
+public class aritmatika {
     public static void main(String[] args) {
 
-        int x = 25, y, z;
-        y = 5;
+        int x, y, z;
+        Scanner sum = new Scanner(System.in);
+        System.out.print("x= ");
+        x = sum.nextInt();
+        System.out.print("y= ");
+        y = sum.nextInt();
 
-        z = x / y;
+        z = x + y;
 
-        System.out.println("x= " + x);
-        System.out.println("y= " + y);
         System.out.println("z= x + y" );
         System.out.println("z= " + z);
 

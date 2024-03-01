@@ -7,11 +7,17 @@ public class programDua {
         Scanner scan = new Scanner(System.in);
         System.out.print("Masukkan nilai n: ");
         int n = scan.nextInt();
-        System.out.print("Jumlah dari sejumlah deret angka n adalah " + sumNumber(n));
+        System.out.print(" = " + sumNumber(n));
     }
     public static int sumNumber(int n){
         int x = 0;
         for(int i=1;i<=n;i++) {
+            if (i == n){
+                System.out.print(i);
+            }
+            else {
+                System.out.print(i + " + ");
+            }
             x+=i;
         }
         return x;
